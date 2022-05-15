@@ -6,3 +6,7 @@
   box-sizing: border-box;
   /*font-family: 'Raleway', sans-serif;*/
 }
+body {
+  color:hsl(0, 0%, 100%);
+  overflow-x: hidden;
+}

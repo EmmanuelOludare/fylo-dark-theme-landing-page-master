@@ -5,5 +5,21 @@
 
 }
 .header{
-  
+  background-color: hsl(217, 28%, 15%);
+  width:100vw;
+}
+.header .intro-text{
+    background-image: url(./components/images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size:122% 62%;
+}
+.header .intro{
+    width:80%;
+}
+.features{
+    background-color: hsl(218, 28%, 13%);
+}
+.howItWorks{
+    background-color: hsl(218, 28%, 13%);
 }
