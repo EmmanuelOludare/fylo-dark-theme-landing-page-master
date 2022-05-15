@@ -6,7 +6,23 @@
 }
 .header{
   background-color: hsl(217, 28%, 15%);
-  width:100vw;
+}
+.header .links-logo{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin-top:3v;
+}
+.header .links-logo img{
+    height:30px;
+    width: 100px;
+}
+.header .links-logo ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 15px;
+    list-style: none;
 }
 .header .intro-text{
     background-image: url(./components/images/bg-curvy-mobile.svg);
@@ -25,7 +41,19 @@
 }
 .testimonials{
     background-color: hsl(218, 28%, 13%);
+    padding-bottom: 100px;
 }
 .testimonials .testimonial{
     background-color: hsl(219, 30%, 18%);
 }
+.getStarted{
+    background-color: hsl(217, 28%, 15%);
+    z-index: 3;
+    margin-top:-60px;
+}
+.footer{
+    background-color: hsl(218, 28%, 13%);
+    padding-top: 100px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
