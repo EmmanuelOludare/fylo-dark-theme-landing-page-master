@@ -1,6 +1,7 @@
 import Header from './Header'
 import Features from './Features'
 import HowItWorks from './HowItWorks'
+import Testimonials from './Testimonials'
 
 const Contents = () => {
   return (
@@ -8,6 +9,7 @@ const Contents = () => {
       <Header />
       <Features />
       <HowItWorks />
+      <Testimonials />
     </div>
   )
 }

@@ -23,3 +23,9 @@
 .howItWorks{
     background-color: hsl(218, 28%, 13%);
 }
+.testimonials{
+    background-color: hsl(218, 28%, 13%);
+}
+.testimonials .testimonial{
+    background-color: hsl(219, 30%, 18%);
+}
