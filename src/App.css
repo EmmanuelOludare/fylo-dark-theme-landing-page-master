@@ -7,6 +7,7 @@
     background-color: hsl(217, 28%, 15%);
 }
 .header .links-logo{
+    display:flex;
     justify-content:space-between;
     align-items:center;
     position:relative;
@@ -91,6 +92,8 @@
     grid-template-columns:85%;
     justify-content:center;
     align-items:center;
+    padding: 130px 0px 130px 0px;
+    grid-row-gap:65px ;
 }
 .features .feature{
     text-align: center;
@@ -98,26 +101,82 @@
     flex-direction: column;
     justify-content:center;
     align-items:center;
-    gap: 10px;
-    padding-top: 150px;
+    gap: 15px;
+}
+.features .feature img{
+    padding-bottom: 13px;
+}
+.features .feature h3{
+    font-family: 'Raleway', sans-serif;
+}
+.features .feature p{
+    font-size: 14px;
+    line-height:20px;
 }
 .howItWorks{
     background-color: hsl(218, 28%, 13%);
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap: 40px;
 }
-.howItWorks img{
-    height:30px;
+.howItWorks>img{
+    width:85%;
+}
+.howItWorks .text{
+    width:85%;
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+.howItWorks .text h3{
+    font-family:'Raleway', sans-serif;
+}
+.howItWorks .text p{
+    font-size: 14px;
+}
+.howItWorks .text span{
+    display: flex;
+    gap: 7px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-bottom:hsl(177, 67%, 63%) solid 2px;
+    width: 152px;
+    transition: all 0.3s ease-in-out;
+}
+.howItWorks .text span:hover{
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+.howItWorks .text span p{
+    color:hsl(177, 67%, 63%);
+}
+.howItWorks .text span:hover p{
+    color:hsl(0, 0%, 100%);
+    transition: all 0.3s ease-in-out;
+}
+.howItWorks .text span img{
+    transition: all 0.3s ease-in-out;
+}
+.howItWorks .text span:hover img{
+    content:url('./images/icon-arrow-hover.svg');
 }
 .testimonials{
     background-color: hsl(218, 28%, 13%);
-    padding-bottom: 100px;
+    padding: 130px 0px 130px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .testimonials .testimonial{
     background-color: hsl(219, 30%, 18%);
+    width:80%;
 }
 .getStarted{
     background-color: hsl(217, 28%, 15%);
     z-index: 3;
-    margin-top:-60px;
 }
 .footer{
     background-color: hsl(218, 28%, 13%);
