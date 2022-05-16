@@ -12,12 +12,14 @@ const Header = () => {
               <li>Sign In</li>
             </ul>
         </div>
-        <div className="intro-text">
-            <img src={intro} alt="" className='intro'/>
-            <h2>All your files in one secure location, accessible anywhere.</h2>
-            <p>Fylo stores all your most important files in one secure location. Access them wherever 
-            you need, share and collaborate with friends family, and co-workers.</p>
-            <button>Get Started</button>
+        <div className="container">
+          <div className="intro-text">
+              <img src={intro} alt="" className='intro'/>
+              <h2>All your files in one secure location, accessible anywhere.</h2>
+              <p>Fylo stores all your most important files in one secure location. Access them wherever 
+              you need, share and collaborate with friends family, and co-workers.</p>
+              <button>Get Started</button>
+          </div>
         </div>
     </div>
   )

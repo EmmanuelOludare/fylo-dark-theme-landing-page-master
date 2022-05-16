@@ -2,20 +2,23 @@
 
 }
 .contents{
-
+    display:flex;
+    flex-direction:column; 
 }
 .header{
-  background-color: hsl(217, 28%, 15%);
+    background-color: hsl(217, 28%, 15%);
 }
 .header .links-logo{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
-    margin-top:3v;
+    position:relative;
+    top:5vh;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 .header .links-logo img{
-    height:30px;
-    width: 100px;
+    height:27px;
 }
 .header .links-logo ul{
     display:flex;
@@ -24,20 +27,73 @@
     gap: 15px;
     list-style: none;
 }
-.header .intro-text{
+.header .links-logo ul li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    opacity: 0.85;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.header .links-logo ul li:hover{
+    opacity: 1;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.header .container{
     background-image: url(./components/images/bg-curvy-mobile.svg);
     background-repeat: no-repeat;
     background-position:bottom;
-    background-size:122% 62%;
+    background-size:120% 66%;
+    width:100%;
 }
-.header .intro{
-    width:80%;
+.header .intro-text{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    gap: 15px;
+    width:85%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 18% auto auto auto;
+}
+.header .intro-text .intro{
+    width:98%;
+}
+.header .intro-text h2{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 18px;
+    line-height: 30px;
+}
+.header .intro-text p{
+    font-size:14px;
+    line-height:20px;
+}
+.header .intro-text button{
+    background-color:hsl(198, 60%, 50%);
+    color: hsl(0, 0%, 100%);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px 0px 10px 0px;
+    font-weight: 700;
+}
+.header .intro-text button:hover{
+    background-color:hsl(198, 55%, 76%);  
 }
 .features{
     background-color: hsl(218, 28%, 13%);
 }
 .howItWorks{
     background-color: hsl(218, 28%, 13%);
+}
+.howItWorks img{
+    height:30px;
 }
 .testimonials{
     background-color: hsl(218, 28%, 13%);
