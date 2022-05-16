@@ -1,5 +1,5 @@
-import stayProductive from './images/illustration-stay-productive.png'
-import arrow from './images/icon-arrow.svg'
+import stayProductive from '../images/illustration-stay-productive.png'
+import arrow from '../images/icon-arrow.svg'
 
 const HowItWorks = () => {
   return (

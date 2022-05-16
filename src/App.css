@@ -1,6 +1,4 @@
-.app{
-
-}
+.app{}
 .contents{
     display:flex;
     flex-direction:column; 
@@ -9,7 +7,6 @@
     background-color: hsl(217, 28%, 15%);
 }
 .header .links-logo{
-    display:flex;
     justify-content:space-between;
     align-items:center;
     position:relative;
@@ -38,9 +35,10 @@
     opacity: 1;
     font-weight: 700;
     text-decoration: underline;
+    display:flex;
 }
 .header .container{
-    background-image: url(./components/images/bg-curvy-mobile.svg);
+    background-image: url(./images/bg-curvy-mobile.svg);
     background-repeat: no-repeat;
     background-position:bottom;
     background-size:120% 66%;
@@ -88,6 +86,20 @@
 }
 .features{
     background-color: hsl(218, 28%, 13%);
+    width: 100%;
+    display:grid;
+    grid-template-columns:85%;
+    justify-content:center;
+    align-items:center;
+}
+.features .feature{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+    padding-top: 150px;
 }
 .howItWorks{
     background-color: hsl(218, 28%, 13%);

@@ -1,5 +1,5 @@
-import logo from './images/logo.svg'
-import intro from './images/illustration-intro.png'
+import logo from '../images/logo.svg'
+import intro from '../images/illustration-intro.png'
 
 const Header = () => {
   return (

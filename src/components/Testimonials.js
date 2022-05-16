@@ -1,7 +1,7 @@
-import quotes from './images/bg-quotes.png'
-import profile1 from './images/profile-1.jpg'
-import profile2 from './images/profile-2.jpg'
-import profile3 from './images/profile-3.jpg'
+import quotes from '../images/bg-quotes.png'
+import profile1 from '../images/profile-1.jpg'
+import profile2 from '../images/profile-2.jpg'
+import profile3 from '../images/profile-3.jpg'
 
 const Testimonials = () => {
   return (
