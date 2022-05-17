@@ -2,7 +2,6 @@ import Header from './Header'
 import Features from './Features'
 import HowItWorks from './HowItWorks'
 import Testimonials from './Testimonials'
-import GetStarted from './GetStarted'
 import Footer from './Footer'
 
 const Contents = () => {
@@ -12,7 +11,6 @@ const Contents = () => {
       <Features />
       <HowItWorks />
       <Testimonials />
-      <GetStarted />
       <Footer />
     </div>
   )
