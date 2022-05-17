@@ -163,24 +163,72 @@
     content:url('./images/icon-arrow-hover.svg');
 }
 .testimonials{
-    background-color: hsl(218, 28%, 13%);
-    padding: 130px 0px 130px 0px;
     width: 100%;
+    padding: 130px 0px 260px 0px;
+    background-color: hsl(218, 28%, 13%);
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+}
+.testimonials>img{
+    height:20px;
+    width:30px;
+    margin-left:8%;
+    margin-top:8px;
+    z-index: 2;
+}
+.testimonials .container{
+    width: 88%;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
-.testimonials .testimonial{
+.testimonials .container .testimonial{
     background-color: hsl(219, 30%, 18%);
-    width:80%;
+    width: 100%;
+    z-index: 3;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.testimonials .container .testimonial p{
+    font-size: 13px;
+    line-height:20px;
+}
+.testimonials .container .testimonial .profile-info{
+    display:flex;
+    align-items:center;
+    gap: 7px;
+}
+.testimonials .container .testimonial .profile-info img{
+    height:35px;
+    width:35px;
+    border-radius:50%;
+}
+.testimonials .container .testimonial .profile-info .name-title p{
+    font-size:12px;
 }
 .getStarted{
-    background-color: hsl(217, 28%, 15%);
-    z-index: 3;
+    /*background-color: hsl(217, 28%, 15%);*/
+    background-color: red;
+    width:80%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin:auto;
+    z-index: 10;
 }
 .footer{
     background-color: hsl(218, 28%, 13%);
-    padding-top: 100px;
+    padding-top: 130px;
+    z-index: 4;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

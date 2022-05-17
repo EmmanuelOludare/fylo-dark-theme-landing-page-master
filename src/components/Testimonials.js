@@ -14,7 +14,7 @@ const Testimonials = () => {
                 <div className="profile-info">
                     <img src={profile1} alt="" />
                     <div className="name-title">
-                        <h4>Satish Patel</h4>
+                        <h5>Satish Patel</h5>
                         <p>Founder & CEO, Huddle</p>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const Testimonials = () => {
                 <div className="profile-info">
                     <img src={profile2} alt="" />
                     <div className="name-title">
-                        <h4>Bruce McKenzie</h4>
+                        <h5>Bruce McKenzie</h5>
                         <p>Founder & CEO, Huddle</p> 
                     </div> 
                 </div>   
@@ -38,7 +38,7 @@ const Testimonials = () => {
                 <div className="profile-info">
                     <img src={profile3} alt="" />
                     <div className="name-title">
-                        <h4>Iva Boyd</h4>
+                        <h5>Iva Boyd</h5>
                         <p>Founder & CEO, Huddle</p>
                     </div>
                 </div>
