@@ -216,8 +216,7 @@
     font-size:12px;
 }
 .getStarted{
-   /* background-color:hsl(218, 28%, 13%);*/
-   background-color:red;
+    background-color:hsl(218, 28%, 13%);
     width:85%;
     position: relative;
     left: 0;
