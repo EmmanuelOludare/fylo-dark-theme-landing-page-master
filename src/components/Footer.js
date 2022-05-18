@@ -1,20 +1,38 @@
 import { useState,useRef } from "react"
+import logo from '../images/logo.svg'
 
 const Footer = () => {
   const [error,setError] = useState({error:"Please enter a valid email address"})
+  const [color,setColor] = useState('hsl(0, 100%, 63%)')
   const input = useRef(null);
 
+  const onChange = (e) => {
+    e.preventDefault();
+    const regex = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
+    if(input.current.value.match(regex)){
+      setError({error:"Email is Valid"})
+      setColor('hsl(119, 64%, 29%')
+    }else{
+      setError({error:"Please enter a valid email address"})
+      setColor('red')
+    }
+  }
+  
   const validate = (e) => {
     e.preventDefault();
     const regex = /^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/;
     if(input.current.value.match(regex)){
-      setError({error:""})
       input.current.value = ""
+      setError({error:"Email has been Verified"})
+      setColor('green')
+      setTimeout(() => {setError({error:""})},3000)
     }else{
+      input.current.value = ""
+      setColor('hsl(0, 100%, 63%)')
       setError({error:"Please enter a valid email address"})
     }
   }
-    
+  
   return (
     <div className="footer">
       <div className="getStarted">
@@ -23,12 +41,15 @@ const Footer = () => {
         questions, our support team would be happy to help you.</p>
         <form className="prompt">
           <div className="input-error">
-            <input type="text" name="" id="" placeholder="email@example.com" ref={input}/>
-            <p className="error">{error.error}</p>
+            <input type="text" name="" id="" placeholder="email@example.com" ref={input} onKeyUp={onChange} required/>
+            <p className="error" style={{color:color}}>{error.error}</p>
           </div>
           <button onClick={validate}>Get Started For Free</button>
         </form>
     </div>
+    <footer>
+    <img src={logo} alt="" />
+    
          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
   dolore magna aliqua
 
@@ -44,50 +65,13 @@ const Footer = () => {
   Terms
   Privacy
 
-  <footer>
-    <p className="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
   </footer>
+    <p className="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
+      Coded by <a href="https://twitter.com/micheal_olu99" target="_blank" rel="noreferrer">Emmanuel Oludare</a>.
+    </p>
     </div>
   )
 }
 
 export default Footer
-
-/* const initialValue = {email: ""}
-    const [email,setEmail] = useState(initialValue)
-    const [error,setError] = useState({})
-    const [isSubmit,setIsSubmit] = useState(false)
-
-    const handleChange = (e) => {
-      const { name,value } = e.target;
-      setEmail({...email, [name]:value})
-    }
-
-    const handleSubmit = (e) => {
-      e.preventDefault();
-      setError(validate(email));
-      setIsSubmit(true)
-    }
-   useEffect(() => {
-    console.log(email);
-     if(Object.keys(error).length === 0 && isSubmit){
-       console.log(email);
-     }
-   },[error])
-   const validate = (value) => {
-     e.preventDefault();
-     const error = {};
-     const regex = '/^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/';
-     if(!value.email){
-       error.email = "Please enter an email address";
-     }else if(!regex.test(value.email)){
-      error.email = "Please enter a valid email address";
-     }else{
-      error.email = "";
-     }
-     return error;
-   }
-   */ 
