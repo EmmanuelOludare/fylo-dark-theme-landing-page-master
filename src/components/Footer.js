@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
         <div className="phone-email">
           <span><img src={phone} alt="" /><p>+1-543-123-4567</p></span>
-          <img src={email} alt="" /><p>example@fylo.com</p>
+          <span><img src={email} alt="" /><p>example@fylo.com</p></span>
         </div>
         <div className="quick-links">
           <ul>
@@ -77,9 +77,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="icons">
-          <FaFacebookF />
-          <FaTwitter />
-          <FaInstagram />
+          <FaFacebookF className="icon"/>
+          <FaTwitter className="icon"/>
+          <FaInstagram className="icon"/>
       </div>
       </footer>
       <p className="attribution">

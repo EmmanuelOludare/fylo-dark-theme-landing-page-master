@@ -281,7 +281,49 @@
 .footer{
     background-color: hsl(216, 53%, 9%);
     padding-top: 130px;
-    z-index: 4;
+}
+.footer footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    gap: 100px;
+    padding-top: 30px;
+}
+.footer footer .logo-location{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    gap:20px;
+}
+.footer footer .logo-location span{
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap:15px;
+}
+.footer footer .phone-email{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer footer .phone-email span{
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap:15px;
+}
+.footer footer .quick-links{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.footer footer .quick-links ul li{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
