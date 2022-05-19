@@ -275,7 +275,7 @@
     padding: 10px 0px 10px 0px;
     font-weight: 700;
 }
-.getStarted .intro-text button:hover{
+.getStarted .prompt button:hover{
     background-color:hsl(198, 55%, 76%);  
 }
 .footer{
