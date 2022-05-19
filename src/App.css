@@ -12,8 +12,8 @@
     align-items:center;
     position:relative;
     top:5vh;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 .header .links-logo img{
     height:27px;
@@ -139,11 +139,11 @@
 }
 .howItWorks .text span{
     display: flex;
-    gap: 7px;
+    gap: 10px;
     cursor: pointer;
     padding-bottom: 3px;
     border-bottom:hsl(177, 67%, 63%) solid 2px;
-    width: 152px;
+    width: 158px;
     transition: all 0.3s ease-in-out;
 }
 .howItWorks .text span:hover{
@@ -287,26 +287,30 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content:center;
-    gap: 100px;
-    padding-top: 30px;
+    gap: 30px;
+    padding: 50px 32px 10px 32px;
 }
 .footer footer .logo-location{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content:center;
-    gap:20px;
+    gap:25px;
+}
+.footer footer .logo-location>img{
+    height:45px;
 }
 .footer footer .logo-location span{
     font-size: 14px;
     display: flex;
     align-items: flex-start;
     gap:15px;
+    font-size: 16px;
 }
 .footer footer .phone-email{
     display:flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 .footer footer .phone-email span{
     font-size: 14px;
@@ -324,6 +328,33 @@
     font-size: 14px;
     font-weight: 400;
     list-style: none;
+    transition: all 0.3s ease-in-out;
+}
+.footer footer .quick-links ul li:hover{
+    font-weight:700;
+}
+.footer footer .icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+    position: relative;
+    margin:auto;
+    left: 0;
+    right: 0;
+}
+.footer footer .icons .icon{
+    cursor: pointer;
+    border-radius: 50%;
+    border: hsl(0, 0%, 100%) 1px solid;
+    padding:7px;
+    height:30px;
+    width:30px;
+    transition: all 0.3s ease-in-out;
+}
+.footer footer .icons .icon:hover{
+    color:hsl(198, 60%, 50%);
+    border:hsl(198, 60%, 50%) 2px solid;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

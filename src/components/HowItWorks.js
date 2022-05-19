@@ -11,7 +11,7 @@ const HowItWorks = () => {
             storage needs.</p>
             <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email 
             attachments required.</p>
-            <span><p>See how Fylo works</p><img src={arrow} alt="" /></span>
+            <span><p>See how Fylo works</p> <img src={arrow} alt="" /></span>
         </div>
     </div>
   )
