@@ -358,3 +358,331 @@
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width:1000px) {
+.header .links-logo{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.header .links-logo img{
+    height:40px;
+}
+.header .container{
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-size:120% 66%;
+    width:100%;
+}
+.header .intro-text{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+    gap: 15px;
+    width:85%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 18% auto auto auto;
+}
+.header .intro-text .intro{
+    width:98%;
+}
+.header .intro-text h2{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 18px;
+    line-height: 30px;
+}
+.header .intro-text p{
+    font-size:14px;
+    line-height:20px;
+}
+.header .intro-text button{
+    background-color:hsl(198, 60%, 50%);
+    color: hsl(0, 0%, 100%);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px 0px 10px 0px;
+    font-weight: 700;
+}
+.header .intro-text button:hover{
+    background-color:hsl(198, 55%, 76%);  
+}
+.features{
+    background-color: hsl(218, 28%, 13%);
+    width: 100%;
+    display:grid;
+    grid-template-columns:85%;
+    justify-content:center;
+    align-items:center;
+    padding: 130px 0px 130px 0px;
+    grid-row-gap:65px ;
+}
+.features .feature{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap: 15px;
+}
+.features .feature img{
+    padding-bottom: 13px;
+}
+.features .feature h3{
+    font-family: 'Raleway', sans-serif;
+}
+.features .feature p{
+    font-size: 14px;
+    line-height:20px;
+}
+.howItWorks{
+    background-color: hsl(218, 28%, 13%);
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap: 40px;
+}
+.howItWorks>img{
+    width:85%;
+}
+.howItWorks .text{
+    width:85%;
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+.howItWorks .text h3{
+    font-family:'Raleway', sans-serif;
+}
+.howItWorks .text p{
+    font-size: 14px;
+}
+.howItWorks .text span{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-bottom:hsl(177, 67%, 63%) solid 2px;
+    width: 158px;
+    transition: all 0.3s ease-in-out;
+}
+.howItWorks .text span:hover{
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+.howItWorks .text span p{
+    color:hsl(177, 67%, 63%);
+}
+.howItWorks .text span:hover p{
+    color:hsl(0, 0%, 100%);
+    transition: all 0.3s ease-in-out;
+}
+.howItWorks .text span img{
+    transition: all 0.3s ease-in-out;
+}
+.howItWorks .text span:hover img{
+    content:url('./images/icon-arrow-hover.svg');
+}
+.testimonials{
+    width: 100%;
+    padding: 130px 0px 260px 0px;
+    background-color: hsl(218, 28%, 13%);
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+}
+.testimonials>img{
+    height:20px;
+    width:30px;
+    margin-left:8%;
+    margin-top:8px;
+    z-index: 2;
+}
+.testimonials .container{
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.testimonials .container .testimonial{
+    background-color: hsl(219, 30%, 18%);
+    width: 100%;
+    z-index: 3;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.testimonials .container .testimonial p{
+    font-size: 13px;
+    line-height:20px;
+}
+.testimonials .container .testimonial .profile-info{
+    display:flex;
+    align-items:center;
+    gap: 7px;
+}
+.testimonials .container .testimonial .profile-info img{
+    height:35px;
+    width:35px;
+    border-radius:50%;
+}
+.testimonials .container .testimonial .profile-info .name-title p{
+    font-size:12px;
+}
+.getStarted{
+    background-color:hsl(218, 28%, 13%);
+    width:85%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin:-275px auto auto auto;
+    z-index: 10;
+    text-align: center;
+    padding:25px 20px 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap:17px;
+    justify-content:center;
+    align-items:center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.getStarted p{
+    font-size: 14px;
+}
+.getStarted .prompt{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 8px;
+}
+.getStarted .prompt .input-error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    gap:3px;
+}
+.getStarted .prompt .input-error input{
+    width: 280px;
+    border-radius: 20px;
+    padding: 10px 0px 10px 15px;
+    font-weight: 400;
+    outline: none;
+    border:none;
+}
+.getStarted .prompt .input-error p{
+    font-size: 10px;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.getStarted .prompt button{
+    background-color:hsl(198, 60%, 50%);
+    color: hsl(0, 0%, 100%);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    width: 280px;
+    border-radius: 20px;
+    padding: 10px 0px 10px 0px;
+    font-weight: 700;
+}
+.getStarted .prompt button:hover{
+    background-color:hsl(198, 55%, 76%);  
+}
+.footer{
+    background-color: hsl(216, 53%, 9%);
+    padding-top: 130px;
+}
+.footer footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    gap: 30px;
+    padding: 50px 32px 10px 32px;
+}
+.footer footer .logo-location{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    gap:25px;
+}
+.footer footer .logo-location>img{
+    height:45px;
+}
+.footer footer .logo-location span{
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap:15px;
+    font-size: 16px;
+}
+.footer footer .phone-email{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer footer .phone-email span{
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap:15px;
+}
+.footer footer .quick-links{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.footer footer .quick-links ul li{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+}
+.footer footer .quick-links ul li:hover{
+    font-weight:700;
+}
+.footer footer .icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+    position: relative;
+    margin:auto;
+    left: 0;
+    right: 0;
+}
+.footer footer .icons .icon{
+    cursor: pointer;
+    border-radius: 50%;
+    border: hsl(0, 0%, 100%) 1px solid;
+    padding:7px;
+    height:30px;
+    width:30px;
+    transition: all 0.3s ease-in-out;
+}
+.footer footer .icons .icon:hover{
+    color:hsl(198, 60%, 50%);
+    border:hsl(198, 60%, 50%) 2px solid;
+}
+}
