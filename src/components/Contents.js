@@ -8,9 +8,11 @@ const Contents = () => {
   return (
     <div className="contents">
       <Header />
+      <main>
       <Features />
       <HowItWorks />
       <Testimonials />
+      </main>
       <Footer />
     </div>
   )

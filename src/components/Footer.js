@@ -9,6 +9,7 @@ import { FaInstagram } from 'react-icons/fa'
 
 const Footer = () => {
   const [error,setError] = useState({error:"Please enter a valid email address"})
+  const [visibility,setVisibility] = useState('visible')
   const [color,setColor] = useState('hsl(0, 100%, 63%)')
   const input = useRef(null);
 
@@ -31,7 +32,7 @@ const Footer = () => {
       input.current.value = ""
       setError({error:"Email has been Verified"})
       setColor('green')
-      setTimeout(() => {setError({error:""})},3000)
+      setTimeout(() => {setVisibility('hidden')},3000)
     }else{
       input.current.value = ""
       setColor('hsl(0, 100%, 63%)')
@@ -46,22 +47,24 @@ const Footer = () => {
           <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
           questions, our support team would be happy to help you.</p>
           <form className="prompt">
-            <div className="input-error">
+            <div className="input-error input">
               <input type="text" name="" id="" placeholder="email@example.com" ref={input} onKeyUp={onChange} required/>
-              <p className="error" style={{color:color}}>{error.error}</p>
+              <p className="error" style={{color:color,visibility:visibility}}>{error.error}</p>
             </div>
-            <button onClick={validate}>Get Started For Free</button>
+            <div className="input-error button">
+              <button onClick={validate}>Get Started For Free</button>
+              <p className="dummy-error">dummy</p>
+              </div>
           </form>
         </div>
-      <footer>
-        <div className="logo-location">
-          <img src={logo} alt="" />
+        <div className="footer-container">
+        <img src={logo} alt="" />
+        <footer>   
           <span><img src={location} alt="" /><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
           dolore magna aliqua</p></span>
-        </div>
         <div className="phone-email">
-          <span><img src={phone} alt="" /><p>+1-543-123-4567</p></span>
-          <span><img src={email} alt="" /><p>example@fylo.com</p></span>
+          <span><img src={phone} alt="phone"/><p>+1-543-123-4567</p></span>
+          <span><img src={email} alt="email"/><p>example@fylo.com</p></span>
         </div>
         <div className="quick-links">
           <ul>
@@ -82,9 +85,10 @@ const Footer = () => {
           <FaInstagram className="icon"/>
       </div>
       </footer>
+        </div>
       <p className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
-        Coded by <a href="https://twitter.com/micheal_olu99" target="_blank" rel="noreferrer">Emmanuel Oludare</a>.
+        Coded by <a href="https://twitter.com/michael_olu99" target="_blank" rel="noreferrer">Emmanuel Oludare</a>.
       </p>
     </div>
   )
